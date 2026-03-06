@@ -11,6 +11,7 @@ export function useCart() {
   const updateCart = (newCart) => {
     setCart(newCart);
     localStorage.setItem('cart', JSON.stringify(newCart));
+    window.dispatchEvent(new Event('cartUpdated'));
   };
 
   const addToCart = (product) => {
