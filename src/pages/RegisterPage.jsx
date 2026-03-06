@@ -49,9 +49,9 @@ export default function RegisterPage({ onSwitch, onRegister }) {
         </div>
         {error && <div className="bg-red-50 border-l-4 border-red-500 text-red-700 p-4 rounded-lg mb-6">{error}</div>}
         <div className="space-y-5">
-          <InputField label="Name" type="text" placeholder="John Doe" value={formData.name} onChange={e => setFormData({...formData, name: e.target.value})} error={errors.name} required />
-          <InputField label="Email" type="email" placeholder="you@example.com" value={formData.email} onChange={e => setFormData({...formData, email: e.target.value})} error={errors.email} required />
-          <InputField label="Password" type="password" placeholder="••••••••" value={formData.password} onChange={e => setFormData({...formData, password: e.target.value})} error={errors.password} required />
+          <InputField label="Name" type="text" placeholder="Enter your name" value={formData.name} onChange={e => setFormData({ ...formData, name: e.target.value })} error={errors.name} required />
+          <InputField label="Email" type="email" placeholder="Enter your email" value={formData.email} onChange={e => setFormData({ ...formData, email: e.target.value })} error={errors.email} required />
+          <InputField label="Password" type="password" placeholder="Enter your password" value={formData.password} onChange={e => setFormData({ ...formData, password: e.target.value })} error={errors.password} required />
         </div>
         <button type="submit" className="w-full mt-8 py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white rounded-lg hover:from-indigo-700 hover:to-purple-700 font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 transition-all duration-200">Create Account</button>
         <p className="mt-6 text-center text-gray-600">Already have an account? <span onClick={onSwitch} className="text-indigo-600 cursor-pointer hover:text-indigo-700 font-semibold hover:underline">Sign In</span></p>
