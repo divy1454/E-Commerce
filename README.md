@@ -2,6 +2,8 @@
 
 Authentication-based e-commerce dashboard built with React, Vite, and Tailwind CSS v3.
 
+🔗 **Live Demo:** [https://ecommercetaskfo.netlify.app/](https://ecommercetaskfo.netlify.app/)
+
 ## Features
 
 ### Authentication Flow
